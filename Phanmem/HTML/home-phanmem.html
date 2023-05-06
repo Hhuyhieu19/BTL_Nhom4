@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần mềm</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../IMG/Phanmem/iconlap.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    #item1 {grid-area: hd; box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -20px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;}
+    #item2 {grid-area: bn;}
+    #item3 {grid-area: ct1;}
+    #item4 {grid-area: ct2;}
+    #item5 {grid-area: ct3;}
+    #item6 {grid-area: ct4;}
+    #item7 {grid-area: ct5;}
+    #item8 {grid-area: ft;}
+
+    #background{
+        display: grid;
+        grid-template-areas: 
+        'hd hd hd hd hd hd'
+        'bn bn bn bn bn bn'
+        '. . ct1 ct1 . .'
+        '. . ct2 ct2 . .'
+        '. . ct3 ct3 . .'
+        '. . ct4 ct4 . .'
+        '. . ct5 ct5 . .'
+        'ft ft ft ft ft ft'
+        ;
+        text-align: center;
+    }
+    #background > div{
+        padding: 10px;
+    }
+</style>
+<body>
+    <div id="background">
+        <div id="item1">
+            <header>
+                <a href="#"><img src="../IMG/Phanmem/Logolaptop.png" alt="" class="logoStore"></a>
+                <div class="header_First">
+                    <div class="nav_Search">
+                        <div class="search--container">
+                            <input class="find_Header" type="text" placeholder="Tìm kiếm " >
+                            <div class="search_Icon"><i class="Icon_Search_Into fa-solid fa-magnifying-glass"></i></div>
+                        </div>
+            
+                    </div>
+                    <div class="log_In">
+                        <a href="../../Trangchu/HTML/logIn.html"  class="title"><h3>Đăng nhập</h3></a>
+                        <i class="LogIn_Icon fa-solid fa-user"></i>
+                    </div>
+            
+            
+                </div>
+                <ul class="nav">
+                    <!--  -->
+                    <a href="../../Laptop/HTML/trangchulaptop.html" target="_blank">
+                        <li>                       
+                            <p>
+                                <i class="fa-solid fa-laptop"></i>
+                                laptop
+                            </p>
+    
+                        </li>
+                    </a>
+                    <!--  -->
+                    <a href="#">
+                        <li>                       
+                            <p>
+                                <i class="fa-sharp fa-solid fa-book"></i>
+                                phần mềm
+                            </p>
+    
+                        </li>
+                    </a>
+                    <!--  -->
+                    <li class="container__Submenu">                       
+                            <p>
+                                <i class="fa-sharp fa-regular fa-keyboard"></i>
+                                linh kiện
+                            </p>
+                            <ul class="submenu">
+                                <a href="../../Linhkien/HTML/linhKien_CPU.html" target="_blank"><li><p>CPU</p></li></a>
+                                <a href="../../Linhkien/HTML/linhKien_Main.html" target="_blank"><li><p>MAIN</p></li></a>
+                                <a href="../../Linhkien/HTML/linhKien_VGA.html" target="_blank"><li><p>VGA</p></li></a>
+                                <a href="../../Linhkien/HTML/linhKien_RAM.html" target="_blank"><li><p>RAM</p></li></a>
+                                <a href="../../Linhkien/HTML/linhKien_SSD.html" target="_blank"><li><p>SSD</p></li></a>           
+                            </ul>
+                    </li>
+                    <!--  -->
+                    <a href="../HTML/Baohanh.html">
+                        <li>                       
+                            <p>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                 bảo hành
+                            </p>
+                        </li>
+                    </a>
+                    <!--  -->
+                    <a href="../HTML/Suachua.html">
+                        <li>                       
+                            <p>
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                 sửa chữa
+                            </p>
+    
+                        </li>
+                    </a>
+            
+                    <a href="../HTML/Lienhe.html">
+                        <li>                       
+                            <p>
+                                <i class="fa-solid fa-phone"></i>
+                                 liên hệ
+                            </p>
+    
+                        </li>
+                    </a>
+                    
+            
+                </ul>
+                <a class = "shopping"href="">
+                    <h3 class="shopping_title">Giỏ hàng</h3>
+                    <i class="shopping_Cart fa-solid fa-cart-shopping"></i>
+                    <div class="count_product" id="cart-count">
+                        0
+                    </div>
+            
+                </a>
+            </header>
+        </div> 
+
+        <div id="item2">
+            <div class="banner">
+                <div class="row">
+                    <div class="group"><img src="../IMG/Phanmem/a2.png" alt="" class="img1"></div>
+                    <div class="group"><img src="../IMG/Phanmem/a6.png" alt="" class="img2"></div>
+                </div>
+                <div class="text">*Áp dụng khi mua Microsoft 365 Family, chia sẻ tài khoản cho 6 người</div>
+            </div>
+        </div>
+
+        <div id="item3">
+            <img src="../IMG/Phanmem/c1.png" alt="img" usemap="#map_sản_phẩm" width="732px" height="877px">
+
+            <map name="map_sản_phẩm">
+                <area shape="rect" coords="50,54,266,337" href="../HTML/sp1.html" alt="1" target="_blank">
+                <area shape="rect" coords="266,52,484,337" href="../HTML/sp2.html" alt="2" target="_blank">
+                <area shape="rect" coords="482,54,700,331" href="../HTML/sp3.html" alt="3" target="_blank">
+            </map>
+
+        </div>
+
+        <div id="item4">
+            <img src="../IMG/Phanmem/c2.png" alt="">
+        </div>
+
+        <div id="item5">
+            <div class="Tieude"><img src="../IMG/Phanmem/a3.png" alt=""></div>
+            <div class="row">
+                <div class="group"><a href="../HTML/sp2.html" target="_blank"><img src="../IMG/Phanmem/s1.png" alt=""></a></div>
+                <div class="group"><a href="../HTML/sp1.html" target="_blank"><img src="../IMG/Phanmem/s2.png" alt=""></a></div>
+                <div class="group"><a href="../HTML/sp3.html" target="_blank"><img src="../IMG/Phanmem/s3.png" alt=""></a></div>
+            </div>
+        </div>
+
+        <div id="item6">
+            <div class="Tieude"><img src="../IMG/Phanmem/a5.png" alt="" width="1000px"></div>
+            <div class="menu">
+                <ul>
+                  <li class="active">OFFICE</li>
+                  <li>WINDOWS</li>
+                </ul>
+                <div class="content">
+                  <div class="item active">
+                    <div class="row">
+                        <div class="group">
+                            <a href="../HTML/sp1.html" target="_blank">
+                                <img src="../IMG/Phanmem/p3.jpg" alt="" width="200px">
+                                <p>Phần mềm Microsoft 365 Personal QQ2-00003</p>
+                                <p>990.000đ</p>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="../HTML/sp2.html" target="_blank">
+                                <img src="../IMG/Phanmem/p4.jpg" alt="" width="200px">
+                                <p>Phần mềm Microsoft 365 Family 6GQ-00083</p>
+                                <p>1.490.000đ</p>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="../HTML/sp3.html" target="_blank">
+                                <img src="../IMG/Phanmem/p5.jpg" alt="" width="200px">
+                                <p>Phần mềm Office Home & Student 2021 79G-05337</p>
+                                <p>2.190.000đ</p>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="../HTML/sp4.html" target="_blank">
+                                <img src="../IMG/Phanmem/p6.jpg" alt="" width="200px">
+                                <p>Phần mềm Office Home and Business 2019 English APACEM Media less P6 T5D-03302 QQ2-00003</p>
+                                <p>5.1000.000đ</p>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row">
+                        <div class="group">
+                            <a href="../HTML/sp5.html" target="_blank">
+                                <img src="../IMG/Phanmem/p1.jpg" alt="" width="200px">
+                                <p>Phần mềm Microsoft Windows 10 Home Online DwnLd NR KW9-00265</p>
+                                <p>2.850,000đ</p>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="../HTML/sp6.html" target="_blank">
+                                <img src="../IMG/Phanmem/p2.jpg" alt="" width="200px">
+                                <p>Windows 10 Pro 64bit Eng Intl 1pk DSP OEI DVD (FQC-08929)</p>
+                                <p>3.150,000đ</p>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="../HTML/sp7.html" target="_blank">
+                                <img src="../IMG/Phanmem/p2.jpg" alt="" width="200px">
+                                <p>Phần mềm Windows 10 Pro Online DwnLd NR FQC-09131</p>
+                                <p>990,000đ</p>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="item7">
+            <div class="Tieude"><img src="../IMG/Phanmem/a4.png" alt="" width="1000px"></div>
+            <div class="row">
+                <div class="group"><img src="../IMG/Phanmem/b1.png" alt="" width="1000px"></div>
+                <div class="group"><img src="../IMG/Phanmem/b6.png" alt="" width="1000px"></div>
+                <div class="group"><img src="../IMG/Phanmem/b2.png" alt="" width="1000px"></div>
+                <div class="group"><img src="../IMG/Phanmem/b3.png" alt="" width="1000px"></div>
+                <div class="group"><img src="../IMG/Phanmem/b4.png" alt="" width="1000px"></div>
+                <div class="group"><img src="../IMG/Phanmem/b5.png" alt="" width="1000px"></div>
+            </div>
+        </div>
+
+        <div id="item8">
+            <footer>
+                <div class="footer_Container">
+                    <!-- CONTACT-->
+                    <div class="footer_contact" align="left">
+                        <h3>Địa chỉ:</h3>
+                        <i class="local_Icon fa-solid fa-location-dot"></i>
+                        <p class="footer_Local">&emsp; ĐH Công Nghệ thành phố HCM (IUH) 14 Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Minh <br></p>
+                        <h3 class="contact_Title">Thông tin liên hệ</h3>
+                        <a class="contact_info" href="tel:+84905927548">
+                            <i class="contact_Icon fa-solid fa-phone-volume"></i>
+                            <h3 class="phone_Title">Liên hệ mua hàng: </h3>
+                            <h3 class="phone_Number">0905927548</h3>
+                        </a>
+                        <a class="contact_info" href="tel:+84905927548">
+                            <i class="contact_Icon fa-solid fa-phone-volume"></i>
+                            <h3 class="phone_Title">Hỗ trợ khách hàng: </h3>
+                            <h3 class="phone_Number">0905927548</h3>
+                        </a>
+                        <h3 class="social_Title">Fanpage</h3>
+                        <a class="contact_info" href="https://www.facebook.com/profile.php?id=100057646088593">
+                            <i class="contact_Icon fa-brands fa-facebook"></i>
+                            <h3 class="footer_Social">Facebook: &emsp;</h3>
+                            <h4 class="Social_Link">https://www.facebook.com/</h4>
+                        </a>
+                        <a class="contact_info" href="https://www.facebook.com/profile.php?id=100057646088593">
+                            <i class="contact_Icon fa-brands fa-twitter"></i>
+                            <h3 class="footer_Social">Twitter:&emsp;&emsp;&nbsp;&nbsp;</h3>
+                            <h4 class="Social_Link">https://twitter.com/</h4>
+                        </a>
+                        <img class="footer_BCT" src="../IMG/Phanmem/footer_BaoHanh.webp" alt="">
+                    </div>
+                    <!-- MEMBER -->
+                    <div class="footer_member">
+                        <h1 class="title">THÔNG TIN NHÓM 4</h1>
+                        <div class="footer_info">
+                            <p class="info_Member">
+                                <b class="info_Title">HỌ VÀ TÊN       &emsp;  &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;                        MÃ SINH VIÊN <br></b>
+                                Vũ Huy Hiệu 	 &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;      19631461 <br>
+                                Lại Dương Minh Hiếu	 &emsp;&emsp;&emsp;   21044141<br>
+                                Nguyễn Quang Hậu	&emsp;&emsp;&emsp;&emsp;    21005611 <br>
+                                Nguyễn Văn Hảo	    &emsp;&emsp;&emsp;&emsp;&emsp;    21021191<br>
+                                Nguyễn Vũ Hào	     &emsp;&emsp;&emsp;&ensp;&emsp;&emsp;   21001195<br>
+            
+                            </p>
+                        </div>
+                    </div>
+            
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <!--JS item6-->
+    <script src="../JS/JS.js"></script>
+</body>
+</html>

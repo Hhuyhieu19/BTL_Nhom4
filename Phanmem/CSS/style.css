@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.while{
+    color: #fff;
+}
+
+.black{
+    color: black;
+}
+
+
+
+:root{
+    --header_height:80px;
+    --divide_header:calc(var(--header_height) / 4);
+}
+
+.clean_Float{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-size: 14px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+header{
+    display: grid;
+    background-color: white;
+    width: 100%;
+    height: var(--header_height);
+
+}
+
+
+
+.container__Submenu{
+    position: relative;
+    
+}
+.submenu{
+    display: none;
+    top: 100%;
+    left: 2px;
+    z-index: 1;
+    position: absolute;
+   width: 150px;
+   height: 400px;
+}
+
+.container__Submenu:hover .submenu{
+    display: block;
+}
+
+.submenu li{
+    border-radius: 0px;
+    height: 44px;
+    display: inline-block;
+    min-width: 150px;
+    text-align: left;
+    background-color: #c82929;
+}
+
+
+
+.submenu li p{
+    color: white;
+    line-height: 44px;
+}
+
+.submenu li:hover  p{
+    color: black;
+}
+.submenu li:hover{
+    background-color: #c44141;
+
+}
+
+
+header .logoStore{
+    height: var(--header_height);
+    width: 200px;
+    position: absolute;
+    left: 24px;
+}
+
+header .header_First,
+header .nav_Search{
+    height: calc(var(--header_height) / 2);
+}
+
+header .log_In{
+    position: absolute;
+    top: 4px;
+    right: 39px;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+header .log_In .title{
+    display: inline-block;
+    padding-right: 8px;
+    color: black;
+}
+
+header .log_In:active a,
+header .log_In:active i{
+    color: #ccc;
+}
+
+header .log_In .LogIn_Icon{
+    font-size: 21px;
+} 
+
+header  .shopping_Cart{
+    position: absolute;
+    top: 48px;
+    right: 36px;
+    font-size: 28px;
+    -webkit-transform: scaleX(-1); 
+}
+
+header .shopping_title{
+    position: absolute;
+    top: 52px;
+    right: 70px;
+    font-size: 18px;
+}
+
+header  .shopping{
+    color: black;
+}
+
+header  .shopping:hover{
+    color: #ccc;
+}
+
+header  .shopping:hover .count_product{
+    opacity: 0.6;
+}
+
+header  .count_product{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius:50% ;
+    top: 30px;
+    right: 16px;
+    text-align: center;
+    
+}
+
+header .search--container{
+    justify-content: center;
+    display: flex;
+}
+
+header .find_Header{
+    margin-top: 5px;
+    width: 30%;
+    padding:5px;
+    /* top: 8px; */
+    right: 611px;
+    border-radius: 15px 0 0 15px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 12px;
+}
+
+header  .search_Icon .Icon_Search_Into{
+    padding: 4px 6px;
+    
+}
+
+header  .search_Icon{
+    font-size: 20px;
+    margin-top: 5px;
+    width: 42px;
+    height: 31px;
+    background-color: #ccc;
+    border-radius: 0 15px 15px 0;
+    border: 2px solid;
+    display: inline-block;
+}
+
+header  .search_Icon:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
+
+header .nav{
+    width: 100%;
+    text-align: center;
+    
+}
+
+header .nav li{
+    
+    font-weight: 700;
+    display: inline-block;
+    color: black;
+    margin-left: -4px;
+    line-height: var(--divide_header);
+    text-transform: uppercase;
+    padding: 0px 28px;
+    white-space: -4px;
+    
+}
+
+header .nav li a{
+    text-decoration: none;
+    color: black;
+}
+header .nav>a:hover>li {
+    background-color: black;
+    cursor: pointer;
+}
+
+.container__Submenu:hover{
+    background-color: #000;
+    cursor: pointer;
+}
+
+header .nav li:hover p {
+    color: white;
+}
+
+header .nav i{
+    display: block;
+    line-height: var(--divide_header);
+    text-align: center;
+}
+
+.banner{
+    background: url(../IMG/Phanmem/backhead1.png);
+    background-repeat: no-repeat;
+}
+.banner .row{
+    display: flex;
+}
+.banner .group img{
+    width: 500px;
+    margin-left: 120px;
+}
+.banner .text{
+    font-size: 20px;
+    position: absolute;
+    top: 500px;
+    left: 650px;
+}
+#item4 img{
+    border: 5px solid rgb(17, 179, 166);
+    border-radius: 20px;
+}
+#item5 .row{
+    display: flex;
+}
+#item5 .Tieude img{
+    width: 1000px;
+}
+#item5 .group img{
+    width: 350px;
+    margin-left: 20px;
+}
+#item6 .menu ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    margin-left: 78px;
+}
+#item6 .menu li{
+    width: 491px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(161, 161, 161);
+    cursor: pointer;
+    border-bottom: 5px solid rgb(161, 161, 161);
+}
+#item6 .row{
+    display: flex;
+}
+#item6 .group{
+    width: 200px;
+    margin-left: 68px;
+}
+#item6 .group p{
+    font-weight: bold;
+    text-align: left;
+    line-height: 30px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #000;
+}
+#item6 .item{
+    display: none;
+}
+#item6 .menu .item.active {
+    display: block;
+}
+#item6 .menu .content {
+    margin-top: 20px;
+}
+
+#item6 .menu li.active{
+    color: red;
+    border-bottom: 5px solid red;
+}
+footer{
+    display: grid;
+    width: 100%;  
+    background-color: #ccc;
+    min-height: 400px;
+}
+
+footer .footer_Container{
+    width: calc(100% - 84px);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: table;
+    clear: both;
+
+    /* background-color: black; */
+}
+
+footer .footer_Container .footer_contact,
+footer .footer_Container .footer_member{
+    
+    width: 600px;
+}
+
+footer .footer_Container .footer_contact{
+    float: left;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+footer .footer_Container .footer_Local{
+    display: inline;
+}
+
+footer .footer_Container .contact_Icon{
+    font-size: 24px;
+    padding-right: 24px;
+}
+
+footer .footer_Container .footer_member{
+    float: right;
+}
+
+footer .footer_contact .contact_info{
+    display: block;
+    width: 100%;
+}
+
+footer .footer_contact .phone_Title:active{
+    color: red;
+}
+footer .footer_contact .Social_Link,
+footer .footer_contact .phone_Title,
+footer .footer_contact .phone_Number,
+footer .footer_contact .footer_Social{
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    
+}
+
+footer .footer_contact .phone_Title{
+    color:black ;
+    font-size: 16px;
+}
+
+footer .footer_Container .footer_BCT{
+    width: 300px;
+    margin-top: 12px;
+}
+
+footer .info_Member{
+    font-style: italic;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 24px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    margin-top: 12px;
+}
